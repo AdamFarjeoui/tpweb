@@ -1,1 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+}
+
+.navhaut {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.div1 ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.div1 ul li {
+    display: inline;
+}
+
+.div1 ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-family: Ubuntu, sans-serif;
+    transition: color 0.3s;
+}
+
+.div1 ul li a:hover {
+    color: #007bff;
+}
+
+.div2 input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
 
