@@ -8,21 +8,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const medDesc = document.getElementById('med-desc');
     const medImg = document.getElementById('med-img');
 
-    // Base de données simulée de médicaments
+    // Base de données de médicaments
     const medications = {
         'doliprane': {
             name: 'Doliprane 1000mg',
             notif: 'Médicament en vente libre',
             location: 'Disponible dans toutes les pharmacies et parapharmacies',
             desc: 'Paracétamol, antalgique et antipyrétique. Indiqué dans le traitement des douleurs et/ou de la fièvre.',
-            img: 'image/doliprane.jpeg'
+            img: 'image/doliprane.jpg'
         },
         'ibuprofene': {
             name: 'Ibuprofène 400mg',
             notif: 'Médicament sur ordonnance recommandée',
             location: 'Disponible en pharmacie sur présentation d\'une ordonnance',
             desc: 'Anti-inflammatoire non stéroïdien (AINS). Indiqué dans le traitement des douleurs, de la fièvre et des inflammations.',
-            img: 'https://via.placeholder.com/300x200?text=Ibuprofène'
+            img: 'image/ibuprofene.jpg'
         },
         'amoxicilline': {
             name: 'Amoxicilline 500mg',
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notif: 'Médicament en vente libre',
             location: 'Disponible dans toutes les pharmacies et parapharmacies',
             desc: 'Antidiarrhéique. Indiqué dans le traitement symptomatique des diarrhées aiguës.',
-            img: 'https://via.placeholder.com/300x200?text=Smecta'
+            img: 'image/smecta.jpg'
         }
     };
 
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        // Recherche dans la base de données
+        // Recherche dans la base de donnees
         let found = false;
         for (const med in medications) {
             if (med.includes(searchTerm) || medications[med].name.toLowerCase().includes(searchTerm)) {
@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Fonction pour afficher les informations du médicament
-    function displayMedication(med) {
+    // Fonction pour afficher les informations du medicament
+    function affMed(med) {
         medName.textContent = med.name;
         medNotif.textContent = med.notif;
         medLocation.textContent = med.location;
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
         medicationInfo.classList.remove('hidden');
     }
 
-    // Permettre la recherche avec la touche Entrée
+    // Permettre la recherche avec la touche Entree
     searchInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             searchBtn.click();
