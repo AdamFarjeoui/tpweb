@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notif: 'Médicament en vente libre',
             location: 'Disponible dans toutes les pharmacies et parapharmacies',
             desc: 'Paracétamol, antalgique et antipyrétique. Indiqué dans le traitement des douleurs et/ou de la fièvre.',
-            img: 'https://via.placeholder.com/300x200?text=Doliprane'
+            img: 'image/doliprane.jpeg'
         },
         'ibuprofene': {
             name: 'Ibuprofène 400mg',
