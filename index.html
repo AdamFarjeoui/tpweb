@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+=======
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,4 +38,72 @@
         </header>        
         <script src="" async defer></script>
     </body>
+</html>
+>>>>>>> 1db996f47c011381550b3c1d41c810d27b2d86be
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de Médicaments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="logo_site.png" alt="Logo" class="logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Convocation</a></li>
+                    <li><a href="#">Pharmacies</a></li>
+                    <li><a href="#">Langue</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="search-section">
+                <h2>Recherche</h2>
+                <div class="search-box">
+                    <input type="text" id="medication-search" placeholder="Entrez le nom du médicament...">
+                    <button id="search-btn">Rechercher</button>
+                </div>
+            </section>
+
+            <section class="results-section" id="results">
+                <div class="medication-info hidden" id="medication-info">
+                    <div class="medication-image">
+                        <img id="med-img" src="" alt="Image du médicament">
+                    </div>
+                    <div class="medication-details">
+                        <h3 id="med-name"></h3>
+                        <p><strong>Notification:</strong> <span id="med-notif"></span></p>
+                        <p><strong>Où acheter:</strong> <span id="med-location"></span></p>
+                        <p><strong>Description:</strong> <span id="med-desc"></span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="organization-section">
+                <h2>Organisations de santé</h2>
+                <p>Des informations sur les organisations de santé et les pharmaciens partenaires.</p>
+            </section>
+
+            <section class="manufacturer-section">
+                <h2>Lieu de fabrication</h2>
+                <p>Informations sur les lieux de production des médicaments.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Recherche de Médicaments. Tous droits réservés.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
