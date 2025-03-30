@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
             notif: 'Médicament sur ordonnance obligatoire',
             location: 'Disponible en pharmacie sur présentation d\'une ordonnance médicale',
             desc: 'Antibiotique de la famille des pénicillines. Indiqué dans le traitement des infections bactériennes.',
-            img: 'C:\Users\rania\OneDrive\Documents\iot 2 b\sem 2\tp web\exp_tp_web\image\amoxiciline.jpg'
+            img: 'C:\Users\rania\OneDrive\Documents\iot 2 b\sem 2\tp web\exp_tp_web\image\amoxicilline.jpg'
         },
         'smecta': {
             name: 'Smecta',
